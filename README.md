@@ -1,4 +1,10 @@
-# Store
+# Ecommerce Application, with Stripe payments.
+
+APIs used are Stripe, Fake store API and Robomatic from RapidAPI. Keys used in code without secrets configuration, but all keys in this example have been replaced with text. To test the APIs in the application you would need to get new keys from Stripe and Robomatic and find their references in the code. 
+
+<hr> <br>
+
+## Technical Notes
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.2.1.
 
