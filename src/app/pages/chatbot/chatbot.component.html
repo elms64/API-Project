@@ -1,0 +1,43 @@
+   <mat-card class="mx-auto my-3 max-w-7xl flex justify-between">
+    <h2 style="text-align:center">This is Olaf, our friendly helper chatbot</h2>
+    <p style="text-align:center">This chat is available 24/7 and can help with many common customer service enquiries!</p>
+    <p style="text-align:center">Send a message below:</p>
+    </mat-card>
+
+    <br><br>
+    <mat-card style="color:darkslategray" class="mx-auto my-3 max-w-3xl flex justify-between">
+        <div>
+            <mat-hint>Ask me something...</mat-hint>
+            <p>
+            <input 
+            style="padding:15px;border: 1px solid darkgray;"
+            value="What is 25 - 9?"
+            type ="text"
+            id="userInput"
+            #userInput
+            [(ngModel)]="userMessage"
+            ></p>
+            <button mat-raised-button id="sendButton" 
+            (click)="getMessage(userInput.value);">Send Message</button>
+        </div>   
+    </mat-card>
+
+    <mat-card class="mx-auto my-3 max-w-3xl flex justify-between">
+      <p style="text-align:right"> <br><br><br><br> 
+      <span id="botResponse" 
+      style="padding:15px;border: 1px solid darkgray; text-align: right; width:auto;"
+      >Hi! how are you?</span>
+      <br><br><br></p>
+    </mat-card>
+
+    
+    <mat-card class="mx-auto my-3 max-w-3xl flex justify-between">
+      <div id="div1">
+        <p id="p1"></p>
+        <p id="p2"></p>
+        </div><br>
+        <div id="div2">
+          <p id="p1"></p>
+          <p id="p2"></p>
+          </div>
+    </mat-card>
